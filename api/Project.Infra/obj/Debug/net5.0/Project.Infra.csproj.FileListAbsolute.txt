@@ -1,0 +1,11 @@
+C:\workspace\projeto-teste\api\Project.Infra\bin\Debug\net5.0\Project.Infra.deps.json
+C:\workspace\projeto-teste\api\Project.Infra\bin\Debug\net5.0\Project.Infra.dll
+C:\workspace\projeto-teste\api\Project.Infra\bin\Debug\net5.0\ref\Project.Infra.dll
+C:\workspace\projeto-teste\api\Project.Infra\bin\Debug\net5.0\Project.Infra.pdb
+C:\workspace\projeto-teste\api\Project.Infra\obj\Debug\net5.0\Project.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\projeto-teste\api\Project.Infra\obj\Debug\net5.0\Project.Infra.AssemblyInfoInputs.cache
+C:\workspace\projeto-teste\api\Project.Infra\obj\Debug\net5.0\Project.Infra.AssemblyInfo.cs
+C:\workspace\projeto-teste\api\Project.Infra\obj\Debug\net5.0\Project.Infra.csproj.CoreCompileInputs.cache
+C:\workspace\projeto-teste\api\Project.Infra\obj\Debug\net5.0\Project.Infra.dll
+C:\workspace\projeto-teste\api\Project.Infra\obj\Debug\net5.0\ref\Project.Infra.dll
+C:\workspace\projeto-teste\api\Project.Infra\obj\Debug\net5.0\Project.Infra.pdb
