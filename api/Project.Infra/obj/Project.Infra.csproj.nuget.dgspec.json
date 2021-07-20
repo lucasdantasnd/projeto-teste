@@ -4,14 +4,14 @@
     "C:\\workspace\\projeto-teste\\api\\Project.Infra\\Project.Infra.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\projeto-teste\\api\\Project.Infra\\Project.Infra.csproj": {
+    "C:\\workspace\\projeto-teste\\api\\Project.Domain\\Project.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\projeto-teste\\api\\Project.Infra\\Project.Infra.csproj",
-        "projectName": "Project.Infra",
-        "projectPath": "C:\\workspace\\projeto-teste\\api\\Project.Infra\\Project.Infra.csproj",
+        "projectUniqueName": "C:\\workspace\\projeto-teste\\api\\Project.Domain\\Project.Domain.csproj",
+        "projectName": "Project.Domain",
+        "projectPath": "C:\\workspace\\projeto-teste\\api\\Project.Domain\\Project.Domain.csproj",
         "packagesPath": "C:\\Users\\lucas.domingues\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\projeto-teste\\api\\Project.Infra\\obj\\",
+        "outputPath": "C:\\workspace\\projeto-teste\\api\\Project.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas.domingues\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,81 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Flunt": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\workspace\\projeto-teste\\api\\Project.Infra\\Project.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\workspace\\projeto-teste\\api\\Project.Infra\\Project.Infra.csproj",
+        "projectName": "Project.Infra",
+        "projectPath": "C:\\workspace\\projeto-teste\\api\\Project.Infra\\Project.Infra.csproj",
+        "packagesPath": "C:\\Users\\lucas.domingues\\.nuget\\packages\\",
+        "outputPath": "C:\\workspace\\projeto-teste\\api\\Project.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas.domingues\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://build.bompracredito.com.br/httpAuth/app/nuget/feed/_Root/default/v2/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\workspace\\projeto-teste\\api\\Project.Domain\\Project.Domain.csproj": {
+                "projectPath": "C:\\workspace\\projeto-teste\\api\\Project.Domain\\Project.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

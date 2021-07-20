@@ -6,4 +6,3 @@ C:\workspace\projeto-teste\api\Project.Infra\obj\Debug\netcoreapp3.1\Project.Inf
 C:\workspace\projeto-teste\api\Project.Infra\obj\Debug\netcoreapp3.1\Project.Infra.csproj.CoreCompileInputs.cache
 C:\workspace\projeto-teste\api\Project.Infra\obj\Debug\netcoreapp3.1\Project.Infra.dll
 C:\workspace\projeto-teste\api\Project.Infra\obj\Debug\netcoreapp3.1\Project.Infra.pdb
-C:\workspace\projeto-teste\api\Project.Infra\obj\Debug\netcoreapp3.1\Project.Infra.csprojAssemblyReference.cache
