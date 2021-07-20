@@ -10,6 +10,7 @@ C:\workspace\projeto-teste\api\Project.Api\bin\Debug\netcoreapp3.1\Microsoft.Ope
 C:\workspace\projeto-teste\api\Project.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\workspace\projeto-teste\api\Project.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\workspace\projeto-teste\api\Project.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\workspace\projeto-teste\api\Project.Api\obj\Debug\netcoreapp3.1\Project.Api.csprojAssemblyReference.cache
 C:\workspace\projeto-teste\api\Project.Api\obj\Debug\netcoreapp3.1\Project.Api.AssemblyInfoInputs.cache
 C:\workspace\projeto-teste\api\Project.Api\obj\Debug\netcoreapp3.1\Project.Api.AssemblyInfo.cs
 C:\workspace\projeto-teste\api\Project.Api\obj\Debug\netcoreapp3.1\Project.Api.csproj.CoreCompileInputs.cache

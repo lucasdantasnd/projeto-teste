@@ -1,8 +1,9 @@
-C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.AssemblyInfoInputs.cache
-C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.AssemblyInfo.cs
-C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.csproj.CoreCompileInputs.cache
 C:\workspace\projeto-teste\api\Project.Domain\bin\Debug\netcoreapp3.1\Project.Domain.deps.json
 C:\workspace\projeto-teste\api\Project.Domain\bin\Debug\netcoreapp3.1\Project.Domain.dll
 C:\workspace\projeto-teste\api\Project.Domain\bin\Debug\netcoreapp3.1\Project.Domain.pdb
+C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.csprojAssemblyReference.cache
+C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.AssemblyInfoInputs.cache
+C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.AssemblyInfo.cs
+C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.csproj.CoreCompileInputs.cache
 C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.dll
 C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.pdb
