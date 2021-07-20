@@ -25,7 +25,7 @@ namespace Project.Domain.Commands
                 .Requires()
                 .HasMinLen(Name, 3, "Name", "Nome inválido")
                 .IsEmail(Email, "Email", "E-mail inválido")
-          );
+            );
         }
     }
 }
