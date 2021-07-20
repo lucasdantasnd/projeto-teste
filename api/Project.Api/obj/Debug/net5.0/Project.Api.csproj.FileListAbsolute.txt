@@ -11,7 +11,6 @@ C:\workspace\projeto-teste\api\Project.Api\bin\Debug\net5.0\Microsoft.OpenApi.dl
 C:\workspace\projeto-teste\api\Project.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\workspace\projeto-teste\api\Project.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\workspace\projeto-teste\api\Project.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\workspace\projeto-teste\api\Project.Api\obj\Debug\net5.0\Project.Api.csprojAssemblyReference.cache
 C:\workspace\projeto-teste\api\Project.Api\obj\Debug\net5.0\Project.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\workspace\projeto-teste\api\Project.Api\obj\Debug\net5.0\Project.Api.AssemblyInfoInputs.cache
 C:\workspace\projeto-teste\api\Project.Api\obj\Debug\net5.0\Project.Api.AssemblyInfo.cs

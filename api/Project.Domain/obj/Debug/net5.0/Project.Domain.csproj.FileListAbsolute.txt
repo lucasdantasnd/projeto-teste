@@ -1,11 +1,5 @@
-C:\workspace\projeto-teste\api\Project.Domain\bin\Debug\net5.0\Project.Domain.deps.json
-C:\workspace\projeto-teste\api\Project.Domain\bin\Debug\net5.0\Project.Domain.dll
-C:\workspace\projeto-teste\api\Project.Domain\bin\Debug\net5.0\ref\Project.Domain.dll
-C:\workspace\projeto-teste\api\Project.Domain\bin\Debug\net5.0\Project.Domain.pdb
+C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\net5.0\Project.Domain.csprojAssemblyReference.cache
 C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\net5.0\Project.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\net5.0\Project.Domain.AssemblyInfoInputs.cache
 C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\net5.0\Project.Domain.AssemblyInfo.cs
 C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\net5.0\Project.Domain.csproj.CoreCompileInputs.cache
-C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\net5.0\Project.Domain.dll
-C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\net5.0\ref\Project.Domain.dll
-C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\net5.0\Project.Domain.pdb

@@ -4,9 +4,9 @@ namespace Project.Domain.Entities
 {
     public abstract class Entity
     {
-        public Entity(Guid id)
+        public Entity()
         {
-            Id = id;
+            Id = Guid.NewGuid();
         }
 
         public Guid Id { get; private set; }
