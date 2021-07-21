@@ -2,7 +2,8 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { environment } from "src/environments/environment";
-import { resultModel } from "../models/result.model";
+import { CreateUserModel } from "../models/inputs/create.user.model";
+import { resultModel } from "../models/outputs/result.model";
 import { UserModel } from "../models/user.model";
 
 @Injectable({
@@ -18,13 +19,8 @@ export class UserService {
     };
 
 
-    createUser(name: string, email: string): Observable<resultModel> {
-        const params = {
-            name: name,
-            email: email
-        };
-
-        return this.http.post<resultModel>(`${environment.apiUrl}/users/create`, params, this.httpOptions);
+    createUser(createUserModel: CreateUserModel): Observable<resultModel> {
+        return this.http.post<resultModel>(`${environment.apiUrl}/users/create`, createUserModel, this.httpOptions);
     }
 
     updateUser(name: string, email: string) {

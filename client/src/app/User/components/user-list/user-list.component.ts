@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatTableDataSource } from '@angular/material/table';
-import { resultModel } from 'src/app/core/models/result.model';
+import { resultModel } from 'src/app/core/models/outputs/result.model';
 import { UserService } from 'src/app/core/services/user.service';
 
 @Component({
@@ -29,7 +29,7 @@ export class UserListComponent implements OnInit {
       this.dataSource = new MatTableDataSource(res);
     }, error => {
       // _logserivce(error);
-      this._snackBar.open('não foi possível carregar os dados', '', {
+      this._snackBar.open('não foi possível carregar a lista de usuários', '', {
         duration: 3000
       });
     });

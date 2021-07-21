@@ -1,5 +1,11 @@
 <section class="app-container">
     <div class="content">
+
+        <div class="action-section">
+            <span class="title">Lista de usuários</span>
+            <button mat-flat-button color="primary" routerLink="/users/create">Criar novo usuário</button>
+        </div>
+
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
             <ng-container matColumnDef="nome">

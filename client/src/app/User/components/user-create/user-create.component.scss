@@ -3,11 +3,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     .formCustom {
         display: flex;
         flex-direction: column;
-        min-height: 300px;
         min-width: 400px;
         padding: 20px;
         text-align: center;

@@ -3,8 +3,8 @@
     <form [formGroup]="userForm" class="formCustom" (ngSubmit)="onSubmit()">
         <mat-form-field class="example-full-width" appearance="fill">
             <mat-label>Nome</mat-label>
-            <input type="text" matInput formGroupName="firstName" placeholder="nome completo">
-            <mat-error *ngIf="userForm.hasError('firstname') && !userForm.hasError('required')">
+            <input type="text" matInput formControlName="name" placeholder="nome completo">
+            <mat-error *ngIf="userForm.hasError('name') && !userForm.hasError('required')">
                 nome inválido
             </mat-error>
             <mat-error *ngIf="userForm.hasError('required')">
@@ -23,7 +23,13 @@
             </mat-error>
         </mat-form-field>
 
-        <button mat-flat-button color="primary">Enviar</button>
+        <button mat-flat-button color="primary">Cadastrar novo usuário</button>
     </form>
+
+    <div class="errors-list">
+        <ul *ngFor="let error of errorsList">
+            <li>{{ error.message}}</li>
+        </ul>
+    </div>
 
 </div>
