@@ -30,8 +30,8 @@ namespace Project.Api.Controllers
         }
 
         [Route("delete")]
-        [HttpDelete]
-        public CommandResult Update([FromBody] DeleteUserCommand command,
+        [HttpPut]
+        public CommandResult Delete([FromBody] DeleteUserCommand command,
           [FromServices] UserHandler handler)
         {
             return (CommandResult)handler.Handle(command);

@@ -72,3 +72,4 @@ C:\workspace\projeto-teste\api\Project.Api\obj\Debug\netcoreapp3.1\Project.Api.c
 C:\workspace\projeto-teste\api\Project.Api\obj\Debug\netcoreapp3.1\Project.Api.dll
 C:\workspace\projeto-teste\api\Project.Api\obj\Debug\netcoreapp3.1\Project.Api.pdb
 C:\workspace\projeto-teste\api\Project.Api\obj\Debug\netcoreapp3.1\Project.Api.genruntimeconfig.cache
+C:\workspace\projeto-teste\api\Project.Api\bin\Debug\netcoreapp3.1\AutoMapper.dll

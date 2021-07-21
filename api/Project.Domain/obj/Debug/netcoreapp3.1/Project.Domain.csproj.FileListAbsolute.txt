@@ -6,3 +6,4 @@ C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Do
 C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.csproj.CoreCompileInputs.cache
 C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.dll
 C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.pdb
+C:\workspace\projeto-teste\api\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.csprojAssemblyReference.cache
