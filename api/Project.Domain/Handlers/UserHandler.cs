@@ -25,8 +25,14 @@ namespace Project.Domain.Handlers
             if (command.Invalid)
                 return new CommandResult(false, "Informações do usuário inválida", command.Notifications);
 
+            var existingEmail = _userRepository.GetByEmail(command.Email);
+
+            if (existingEmail)
+                return new CommandResult(false, "e-mail já cadastrado", null);
+
             var user = new User(command.Name, command.Email);
             _userRepository.Create(user);
+
             return new CommandResult(true, "usuário cadastrado com sucesso", user);
         }
 
@@ -40,6 +46,7 @@ namespace Project.Domain.Handlers
 
             if (user == null)
                 return new CommandResult(false, "usuário não encontrado", null);
+
 
             user.UpdateUser(command.Name, command.Email);
             _userRepository.Update(user);

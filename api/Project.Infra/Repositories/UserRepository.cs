@@ -40,10 +40,16 @@ namespace Project.Infra.Repositories
             return _context.Users.FirstOrDefault(UserQueries.GetById(id));
         }
 
+        public bool GetByEmail(string email)
+        {
+            return _context.Users.Any(UserQueries.GetByEmail(email));
+        }
+
         public void Delete(User user)
         {
             _context.Users.Remove(user);
             _context.SaveChanges();
         }
+
     }
 }

@@ -10,6 +10,7 @@ namespace Project.Domain.Repositories
         void Update(User user);
         void Delete(User user);
         User GetById(Guid id);
+        bool GetByEmail(string email);
         IEnumerable<User> GetAll();
     }
 }

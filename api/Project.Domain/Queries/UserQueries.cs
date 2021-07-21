@@ -10,6 +10,11 @@ namespace Project.Domain.Queries
         {
             return x => x.Id == id;
         }
+
+        public static Expression<Func<User, bool>> GetByEmail(string email)
+        {
+            return x => x.Email == email;
+        }
     }
 
 }

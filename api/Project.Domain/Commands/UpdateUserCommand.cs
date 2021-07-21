@@ -29,5 +29,6 @@ namespace Project.Domain.Commands
                 .IsEmail(Email, "Email", "E-mail inválido")
             );
         }
+
     }
 }
