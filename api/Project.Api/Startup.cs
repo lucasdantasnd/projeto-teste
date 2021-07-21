@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -5,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Project.Api.Models;
+using Project.Domain.Commands;
 using Project.Domain.Handlers;
 using Project.Domain.Repositories;
 using Project.Infra.Context;
@@ -37,6 +40,14 @@ namespace Project.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Project.Api", Version = "v1" });
             });
+
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<NewUser, CreateUserCommand>();
+            });
+
+            IMapper mapper = config.CreateMapper();
+            services.AddSingleton(mapper);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

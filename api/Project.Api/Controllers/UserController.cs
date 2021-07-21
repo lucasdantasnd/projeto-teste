@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Project.Api.Models;
 using Project.Domain.Commands;
 using Project.Domain.Entities;
 using Project.Domain.Handlers;
@@ -12,12 +14,19 @@ namespace Project.Api.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
+        IMapper _mapper;
+        public UsersController(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
 
         [Route("create")]
         [HttpPost]
-        public CommandResult Create([FromBody] CreateUserCommand command,
+        public CommandResult Create([FromBody] NewUser newUser,
             [FromServices] UserHandler handler)
         {
+            // exemplo com autoMapper;
+            var command = _mapper.Map<CreateUserCommand>(newUser);
             return (CommandResult)handler.Handle(command);
         }
 
