@@ -5,7 +5,7 @@ import { PageNotfoundComponent } from './shared/components/page-notfound/page-no
 const routes: Routes = [
   {
     path: 'users',
-    loadChildren: () => import('./User/user.module').then(m => m.UserModule)
+    loadChildren: () => import('./user/user.module').then(m => m.UserModule)
   },
   { path: '', redirectTo: 'users', pathMatch: 'full' },
   { path: '**', component: PageNotfoundComponent }
