@@ -7,6 +7,8 @@ namespace Project.Domain.Commands
 {
     public class UpdateUserCommand : Notifiable, ICommand
     {
+        public UpdateUserCommand() { }
+
         public UpdateUserCommand(Guid id, string name, string email)
         {
             Id = id;

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Project.Domain.Entities;
+using Project.Domain.Queries;
 using Project.Domain.Repositories;
 using Project.Infra.Context;
 using System;
@@ -31,14 +32,12 @@ namespace Project.Infra.Repositories
 
         public IEnumerable<User> GetAll()
         {
-            return _context.Users
-                .AsNoTracking()
-                .ToList();
+            return _context.Users.AsNoTracking();
         }
 
         public User GetById(Guid id)
         {
-            return _context.Users.FirstOrDefault(x => x.Id == id);
+            return _context.Users.FirstOrDefault(UserQueries.GetById(id));
         }
 
         public void Delete(User user)

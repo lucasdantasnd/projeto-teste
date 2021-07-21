@@ -37,6 +37,10 @@ namespace Project.Domain.Handlers
                 return new CommandResult(false, "Informações do usuário inválida", command.Notifications);
 
             var user = _userRepository.GetById(command.Id);
+
+            if (user == null)
+                return new CommandResult(false, "usuário não encontrado", null);
+
             user.UpdateUser(command.Name, command.Email);
             _userRepository.Update(user);
 
@@ -50,6 +54,10 @@ namespace Project.Domain.Handlers
                 return new CommandResult(false, "usuário inválido", command.Notifications);
 
             var user = _userRepository.GetById(command.Id);
+
+            if (user == null)
+                return new CommandResult(false, "usuário não encontrado", null);
+
             _userRepository.Delete(user);
 
             return new CommandResult(true, "usuário removido com sucesso", null);
