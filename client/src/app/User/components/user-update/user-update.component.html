@@ -1,0 +1,29 @@
+<div class="content">
+
+    <form [formGroup]="userUpdateForm" class="formCustom" (ngSubmit)="onSubmit()">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Nome</mat-label>
+            <input type="text" matInput formControlName="name" placeholder="nome completo">
+            <mat-error *ngIf="userUpdateForm.hasError('name') && !userUpdateForm.hasError('required')">
+                nome inválido
+            </mat-error>
+            <mat-error *ngIf="userUpdateForm.hasError('required')">
+                nome é <strong>obrigatório</strong>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput formControlName="email" placeholder="Ex. user@iaudit.com.br">
+            <mat-error *ngIf="userUpdateForm.hasError('email') && !userUpdateForm.hasError('required')">
+                e-mail inválido
+            </mat-error>
+            <mat-error *ngIf="userUpdateForm.hasError('required')">
+                e-mail é <strong>obrigatório</strong>
+            </mat-error>
+        </mat-form-field>
+
+        <button mat-flat-button color="primary">Atualizar usuário</button>
+    </form>
+
+</div>

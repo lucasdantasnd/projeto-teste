@@ -4,8 +4,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { CreateUserModel } from 'src/app/core/models/inputs/create.user.model';
 import { resultModel } from 'src/app/core/models/outputs/result.model';
 import { UserService } from 'src/app/core/services/user.service';
-import { Router } from "@angular/router"
 import { ResultUserModel } from 'src/app/core/models/outputs/user.result.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-create',
@@ -35,7 +35,6 @@ export class UserCreateComponent implements OnInit {
 
     var createUserModel = new CreateUserModel(this.userForm.value);
     this.userService.createUser(createUserModel).subscribe(res => {
-      console.log(res);
       this.handle(res);
     }, error => {
       // _logserivce(error);
@@ -51,6 +50,7 @@ export class UserCreateComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
     });
   }
+
 
   handle(resultModel: resultModel) {
     if (resultModel.success)

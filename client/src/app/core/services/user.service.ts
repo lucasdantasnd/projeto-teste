@@ -3,7 +3,9 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { environment } from "src/environments/environment";
 import { CreateUserModel } from "../models/inputs/create.user.model";
+import { UpdateUserModel } from "../models/inputs/update.user.model";
 import { resultModel } from "../models/outputs/result.model";
+import { ResultUserModel } from "../models/outputs/user.result.model";
 import { UserModel } from "../models/user.model";
 
 @Injectable({
@@ -23,13 +25,8 @@ export class UserService {
         return this.http.post<resultModel>(`${environment.apiUrl}/users/create`, createUserModel, this.httpOptions);
     }
 
-    updateUser(name: string, email: string) {
-        const params = {
-            name: name,
-            email: email
-        };
-
-        return this.http.put<resultModel>(`${environment.apiUrl}/update`, params, this.httpOptions);
+    updateUser(updateUserModel: UpdateUserModel) {
+        return this.http.put<resultModel>(`${environment.apiUrl}/users/update`, updateUserModel, this.httpOptions);
     }
 
     deleteUser(id: string): Observable<resultModel> {
@@ -45,7 +42,7 @@ export class UserService {
     }
 
     getUserById(id: string) {
-        return this.http.get<resultModel>(`${environment.apiUrl}/users/${id}`, this.httpOptions);
+        return this.http.get<ResultUserModel>(`${environment.apiUrl}/users/${id}`, this.httpOptions);
     }
 
 }

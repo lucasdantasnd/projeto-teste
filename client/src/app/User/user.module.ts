@@ -11,12 +11,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { UserUpdateComponent } from './components/user-update/user-update.component';
 
 
 @NgModule({
     declarations: [
         UserListComponent,
-        UserCreateComponent
+        UserCreateComponent,
+        UserUpdateComponent
     ],
     imports: [
         CommonModule,

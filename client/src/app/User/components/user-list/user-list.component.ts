@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatTableDataSource } from '@angular/material/table';
+import { Router } from '@angular/router';
 import { resultModel } from 'src/app/core/models/outputs/result.model';
 import { UserService } from 'src/app/core/services/user.service';
 
@@ -15,7 +16,8 @@ export class UserListComponent implements OnInit {
   dataSource: any;
 
   constructor(private _userService: UserService,
-    private _snackBar: MatSnackBar) {
+    private _snackBar: MatSnackBar,
+    private router: Router) {
   }
 
   ngOnInit(): void {
@@ -25,7 +27,6 @@ export class UserListComponent implements OnInit {
 
   getUsers() {
     this._userService.getAll().subscribe(res => {
-      console.log(res);
       this.dataSource = new MatTableDataSource(res);
     }, error => {
       // _logserivce(error);
@@ -43,8 +44,8 @@ export class UserListComponent implements OnInit {
     })
   }
 
-  updateUser() {
-
+  updateUser(id: string) {
+    this.router.navigate(['/users/update', { id: id }]);
   }
 
   handle(result: resultModel) {
